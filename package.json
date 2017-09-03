@@ -1,0 +1,24 @@
+{
+  "name": "hweeks",
+  "version": "1.0.0",
+  "description": "A simple time management class",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run lint; npm run coverage",
+    "lint": "$(npm bin)/eslint src/",
+    "mocha": "$(npm bin)/mocha src/",
+    "coverage": "$(npm bin)/nyc $(npm bin)/mocha src/"
+  },
+  "author": "hweeks",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "eslint": "~4.6.0",
+    "eslint-config-google": "~0.9.1",
+    "mocha": "~3.5.0",
+    "nyc": "~11.1.0"
+  },
+  "dependencies": {
+    "underscore": "~1.8.3"
+  }
+}
